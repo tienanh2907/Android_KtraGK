@@ -86,9 +86,8 @@ public class MainActivity extends AppCompatActivity {
     );
 
     public void viewSong(int id,String number,String name) {
-        if(music.isPlaying()){
-            music.release();
-        }
+
+
         music = MediaPlayer.create(this, id);
         double finalTime = music.getDuration();
         txtNumber.setText(number);
